@@ -16,6 +16,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 	//This shows how you have to add JAXB in explicitly on Java 17.
+	//https://www.jesperdj.com/2018/09/30/jaxb-on-java-9-10-11-and-beyond/
+	//https://stackoverflow.com/questions/23796404/could-not-find-method-compile-for-arguments-gradle
 	implementation 'javax.xml.bind:jaxb-api:2.3.1'
 	runtimeOnly 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
 
