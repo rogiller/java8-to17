@@ -14,8 +14,11 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	//implementation 'javax.xml.bind:jaxb-api:2.3.1'
-	//runtime 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
+
+	//This shows how you have to add JAXB in explicitly on Java 17.
+	implementation 'javax.xml.bind:jaxb-api:2.3.1'
+	runtimeOnly 'org.glassfish.jaxb:jaxb-runtime:2.3.1'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
